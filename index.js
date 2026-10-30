@@ -130,6 +130,12 @@ export function createSupportsHyperlinks(stream) {
 				return true;
 			}
 
+			case 'herdr': {
+				// Herdr is a terminal multiplexer that renders OSC 8 links
+				// from its panes. https://github.com/herdrdev/herdr
+				return true;
+			}
+
 		// No default
 		}
 	}
